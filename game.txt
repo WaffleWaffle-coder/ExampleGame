@@ -1,0 +1,42 @@
+Living Room
+The small living room contains a couch, coffee table, and two
+ armchairs. Pictures of various cousins adorn the walls along
+ with two of your aunt's wretched attempts at oil painting. You
+ can't help but notice that the carpet could use a good
+ vacuuming.
+
+Doorways lead west to your father's office, north to your
+ bedroom, and east to the kitchen.
+#
+Bedroom
+This is your domain and has been since your family moved here
+ when you were six. A nightstand with a Superman lamp sits next
+ to your twin bed. Posters of various anime characters cover one
+ wall. A pile of laundry, slowly but surely attaining sentience,
+ occupies the far corner.
+
+ The door to the attic is in the ceiling above the pile of
+ clothes. 
+ 
+ You can return south to the living room or go up to the attic.
+#
+Kitchen
+ This is the kitchen. There is a fridge sitting in the corner of the room. You could open it and get something to eat, but you are not that hungry. There is a knife you can take for self-defense or a flashlight to see. There's also a weird orb. Don't touch it.
+
+Doorways lead west to the living room and south to the garage.
+#
+Office
+This is your father's office. There is a small desk with some compartments. In one of the compartments is the key to the car! Freedom has never been so close!
+
+Doorways lead east to the living room
+#
+Attic
+This is the attic. There are some boxes hiding towards the back wall. It is really, really dusty in here. Besides, the boxes probably only contain like, yearbooks or something else that's boring.
+
+ There is a door back down to your bedroom.
+#
+Garage
+This is the garage. The car is in the middle of the room, but it is not currently started. There's miscellaneous, useless junk scattering the floor and tables.
+
+There is a doorway leading north to the kitchen/
+#
