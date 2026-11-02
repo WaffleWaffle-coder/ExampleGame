@@ -14,10 +14,10 @@ public class OfficeKey extends Item{
 	} else {
 	Game.getCurrentRoom().getExit(1).setLocked(false);
 	usedTool = true;
-	Game.print("Using the tool, you are able to unlock the office door.");
+	Game.print("Using the key, you are able to unlock the office door.");
 	}
 	} else
-	Game.print("You don't see any way to use the tool in this room. This key is only for the office door, after all.");
+	Game.print("You don't see any way to use the key in this room. This key is only for the office door, after all.");
 	}
 
 }

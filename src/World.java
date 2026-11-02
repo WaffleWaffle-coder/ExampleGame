@@ -13,8 +13,8 @@ public class World {
 		office.setLocked(true);
 		attic.setLocked(true);
 		garage.setLocked(true);
-		Item officeKey = new OfficeKey();
-		Item tool = new Tool();
+		
+		Tool tool = new Tool();
 		Item musicbox = new Item("musicbox");
 		Item flashlight = new Item("flashlight");
 		Item knife = new Item("knife");
@@ -29,12 +29,12 @@ public class World {
 		kitchen.addExit(garage, 3);
 		attic.addExit(bedroom, 5);
 		garage.addExit(kitchen, 2);
-		bedroom.addItem(officeKey);
 		livingRoom.addItem(tool);
 		livingRoom.addItem(musicbox);
 		kitchen.addItem(flashlight);
 		kitchen.addItem(knife);
 		kitchen.addItem(mysteriousorb);
+		kitchen.addItem(new Flashlight());
 		return livingRoom;
 		
 		
