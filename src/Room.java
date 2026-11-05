@@ -89,4 +89,9 @@ public class Room implements Serializable{
 	public boolean isLocked() {
 		return locked;
 	}
+
+	public boolean hasItems() {
+		return !items.isEmpty();
+	}
+	
 }

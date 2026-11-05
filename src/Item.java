@@ -34,4 +34,16 @@ public class Item implements Serializable{
 	public boolean isHeavy() {
 		return heavy;
 	}
+	
+	public void open() {
+		Game.print("Sorry, you can't open the " + this);
+	}
+	
+	public void close() {
+		Game.print("Sorry, you can't close the " + this);
+	}
+	
+	public void read() {
+		Game.print("Sorry, you can't read the " + this);
+	}
 }

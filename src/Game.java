@@ -178,8 +178,8 @@ public class Game {
 		if (GameGUI.actions.length == 1) 
 			Game.print("Use what?");
 		else {
-		if (getItems().size() == 0) {
-			Game.print("You don't have any items.");
+		if (getItems().size() == 0 && currentRoom.hasItems()) {
+			Game.print("You don't have any items to use.");
 		}
 			else {
 
@@ -191,7 +191,10 @@ public class Game {
 				}
 			}
 			if (!found) {
-				Game.print("You don't have a " + GameGUI.actions[1] + "!");
+				if (currentRoom.getItem(GameGUI.actions[1])  == null)
+					Game.print("There is no " + GameGUI.actions[1] + " to use!");
+				else
+					currentRoom.getItem(GameGUI.actions[1]).use();
 			}
 		}
 		}
@@ -329,6 +332,104 @@ public class Game {
 		gui.sendCommand();
 			
 	}
+	
+	public static void addInventoryItem(Item i) {
+		items.add(i);
+	}
+	
+public static void read() {
+		
+	boolean found = false;
+	if (GameGUI.actions.length == 1) 
+		Game.print("Read what?");
+	else {
+	if (getItems().size() == 0 && currentRoom.hasItems()) {
+		Game.print("You don't have any items to read.");
+	}
+		else {
+
+		for (int i = 0; i < getItems().size(); i++) {
+			
+			if (getItems().get(i).getName().equals(GameGUI.actions[1])) {
+				getItems().get(i).read();
+				found = true;
+			}
+		}
+		if (!found) {
+			if (currentRoom.getItem(GameGUI.actions[1])  == null)
+				Game.print("There is no " + GameGUI.actions[1] + " to read!");
+			else
+				currentRoom.getItem(GameGUI.actions[1]).read();
+		}
+	}
+	}
+		
+	}
+	
+public static void open() {
+	
+	boolean found = false;
+	if (GameGUI.actions.length == 1) 
+		Game.print("Open what?");
+	else {
+	if (getItems().size() == 0 && currentRoom.hasItems()) {
+		Game.print("You don't have any items to open.");
+	}
+		else {
+
+		for (int i = 0; i < getItems().size(); i++) {
+			
+			if (getItems().get(i).getName().equals(GameGUI.actions[1])) {
+				getItems().get(i).open();
+				found = true;
+			}
+		}
+		if (!found) {
+			if (currentRoom.getItem(GameGUI.actions[1]) == null) {
+			
+				Game.print("There is no " + GameGUI.actions[1] + " to open!");
+			}
+			else {
+				Game.print(GameGUI.actions[1]);
+				Game.print(currentRoom);
+				currentRoom.getItem(GameGUI.actions[1]).open();
+			}
+		}
+	}
+	}
+		
+	}
+	
+
+public static void close() {
+	
+	boolean found = false;
+	if (GameGUI.actions.length == 1) 
+		Game.print("Close what?");
+	else {
+	if (getItems().size() == 0 && currentRoom.hasItems()) {
+		Game.print("You don't have any items to close.");
+	}
+		else {
+
+		for (int i = 0; i < getItems().size(); i++) {
+			
+			if (getItems().get(i).getName().equals(GameGUI.actions[1])) {
+				getItems().get(i).close();
+				found = true;
+			}
+		}
+		if (!found) {
+			if (currentRoom.getItem(GameGUI.actions[1])  == null)
+				Game.print("There is no " + GameGUI.actions[1] + " to close!");
+			else
+				currentRoom.getItem(GameGUI.actions[1]).close();
+		}
+	}
+	}
+		
+	}
+	
 	public static void main(String[] args) {
 		currentRoom = World.buildWorld();
 		runGameGUI();

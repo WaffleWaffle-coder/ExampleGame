@@ -31,7 +31,7 @@ This is your father's office. There is a small desk with some compartments. In o
 Doorways lead east to the living room
 #
 Attic
-This is the attic. There are some boxes hiding towards the back wall. It is really, really dusty in here. Besides, the boxes probably only contain like, yearbooks or something else that's boring.
+This is the attic. There are some boxes hiding towards the back wall. It is really, really dusty in here. Besides, the boxes probably only contain like, yearbooks or something else that's boring. Oh, wait, nevermind. There's a safe tucked away in the corner.
 
  There is a door back down to your bedroom.
 #

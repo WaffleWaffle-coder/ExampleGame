@@ -35,6 +35,7 @@ public class World {
 		kitchen.addItem(knife);
 		kitchen.addItem(mysteriousorb);
 		kitchen.addItem(new Flashlight());
+		attic.addItem(new Safe());
 		return livingRoom;
 		
 		

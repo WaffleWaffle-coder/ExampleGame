@@ -165,6 +165,21 @@ public class GameGUI extends JFrame {
 				Game.print(Game.getCurrentRoom());
 		        Game.print("What would you like to do? ");
 				break;
+			case "read":
+				Game.read();
+				Game.print(Game.getCurrentRoom());
+		        Game.print("What would you like to do? ");
+		        break;
+			case "open":
+				Game.open();
+				Game.print(Game.getCurrentRoom());
+		        Game.print("What would you like to do? ");
+		        break;
+			case "close":
+				Game.close();
+				Game.print(Game.getCurrentRoom());
+		        Game.print("What would you like to do? ");
+		        break;
 			default:
 				Game.print("Error: Enter a proper command");
 				
